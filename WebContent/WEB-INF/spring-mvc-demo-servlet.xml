@@ -33,6 +33,14 @@
 	<!-- this is setting to properties file in the bean [optional - needed if only u want to use property file] -->
 	<util:properties  id="countryOptions" location="classpath:../countries.properties" />
 
+	<!--  Load Custom message rsources 
+		We are using this settings to overwrite the spring validation message of 
+		number exception
+	-->
+	<bean  id="messageSource" 
+	class="org.springframework.context.support.ResourceBundleMessageSource">
+		<property name="basenames" value="resources/messages"/>
+	</bean>
 </beans>
 
 

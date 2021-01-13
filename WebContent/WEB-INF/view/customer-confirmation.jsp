@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 
 <html>
@@ -11,14 +13,10 @@
 	    <link href="${pageContext.request.contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
-		<h2>Learning MVC</h2>
-		<hr/>
-		<p><a class="btn btn-primary" href="hellosecond/showForm">Open Registration Form</a></p>
-		<p><a class="btn btn-primary" href="student/showForm">Open Student Registration Form</a></p>
-		<p><a class="btn btn-primary" href="customer/showForm">Open Customer Registration Form</a></p>
+		<h2>Customer Confirmation</h2>
+		<p>The Customer is Confirmed: ${customer.firstName} ${customer.lastName}</p>
+		<p>Free Passes: ${customer.freePasses}</p>
+		<p>Postal Code: ${customer.postalCode}</p>
 		
-		
-		
-		<p><a class="btn btn-primary" href="course/showForm">Open Course Registration Form</a></p>
 	</body>
 </html>
